@@ -33,7 +33,95 @@ Notaciones.</h3>
         </nav>
       </div>
 
+        <div class="jumbotron">
+            <h2>Método directo</h2>
+                <p>   En los libros de texto se suele leer:
+                      “Si A, entonces B”
+                      “Para que se cumpla B es suficiente que se cumpla A”
+                      “B es una condición necesaria para que se cumpla A”
+                      Se trata de de demostrar que si se cumple la propiedad A, entonces se verifica B.</p>
+            <p><b>Ejemplos:</b></p>
+            <p>
+                      i) Si a es un número real, sabiendo que en el conjunto de los números reales se cumple la
+                      propiedad distributiva del producto respecto de la suma y que 0 es el elemento neutro de la
+                      suma, probar que a×0 =0.
+                      ii) Si n es un número natural impar, probar que n
+                      2
+                      es de la forma 8k+1, para algún entero k≥1.
+                      iii) Demostrar que para cada terna de números reales positivos a, b, c se cumple que
+                      a/(b+c) + b/(a+c) + c/(a + b) ≥ 1.
+                      iv) Dado un entero positivo n, probar que n
+                      3
+                      -n es siempre múltiplo de 3.
+                      v) Demostrar que las soluciones de la ecuación ax2+bx+c=0, donde a,b,c son números reales,
+                      vienen dadas a través de la fórmula (-b±√b
+                      2
+                      -4ac)/2.
 
+            </p>
+
+            <h2>Reducción al absurdo</h2>
+            <p>
+            Para probar que una propiedad A es verdadera, se supone que A es falsa y se llega a una
+            contradicción. Evidentemente, empleamos el hecho de que una proposición en Matemáticas ó es
+            verdadera ó es falsa, pero no ambas cosas a la vez.
+            Hay que decir que este recurso era muy querido por los matemáticos griegos. Hay quienes opinan
+            que es preferible dar, si es posible, demostraciones directas, para de esa forma no confundir al
+            alumno con tantas suposiciones que lleguen a crearle una sensación de falta de control en el
+                razonamiento, al no poder saber en cada momento qué es cierto o qué es falso.</p>
+            <p><b>Ejemplos:</b></p>
+            <p>i) Probar que √2 es un número real irracional.
+                ii) Demostrar que hay infinitos números primos (Euclides).
+            </p>
+            <h2>Contrarrecíproco</h2>
+            <p>Este mecanismo de demostración se basa en el hecho de que la implicación A B es
+                equivalentemente lógica a NO B NO A. Este mecanismo es aconsejable cuando no sabemos
+                cómo trabajar a partir de la hipótesis A y, en cambio, la negación de B proporciona un buen punto
+                de partida. No se debe confundir el contrarrecíproco con el mecanismo de reducción al absurdo.</p>
+            <p><b>Ejemplos:</b></p>
+            <p>i) Si n
+                2
+                es un número natural par, entonces n es par.
+                ii) Sean x, y números reales. Si x
+                2+y2=0, entonces x=0 e y=0.</p>
+            <h2>Doble implicación</h2>
+            <p> El recíproco de la implicación A → B es B → A. Obviamente si se cumple una implicación no tiene
+                por qué cumplirse necesariamente la otra. Por ejemplo, si A representa a la propiedad de que un
+                número natural es múltiplo de 6 y B a la de ser múltiplo de 3, tenemos que A → B pero su recíproco
+                es cierto (¿sabría demostrarlo?).
+                Cuando se tiene que tanto la implicación A → B como su recíproco B → A son ciertas, decimos que
+                las condiciones A y B son equivalentes y empleamos el signo de la doble implicación.
+                En los textos aparece desarrollada esta doble implicación en sentencias del tipo:
+                “Probar que A y B son equivalentes”
+                “Probar que se cumple A si, y sólo si, se cumple B”
+                “Una condición necesaria y suficiente para que se dé A es que se verifique B”</p>
+            <p><b>Ejemplos</b></p>
+            <p>i) Dados dos números reales x,y se cumple que x
+                2+y2=0 si, y sólo si, x=0 e y=0.</p>
+                <p>ii) Dados dos enteros n, m se cumple que n∙m es par si, y sólo si, n es par ó m es par.</p>
+                <p>iii) Para que un paralelogramo sea un rectángulo es condición necesaria y suficiente que sus
+                diagonales tengan la misma longitud. </p>
+
+            <h2>Método de inducción</h2>
+            <p>Sea P(n) una propiedad relacionada con el número natural n.
+               <br> – Se demuestra que P(1) es cierta.
+               <br> – Se prueba que si P(k) es cierta, entonces P(k+1) también lo es.
+                <br>En ese caso, la propiedad P(n) es válida para cualquier n Є N.</p>
+            <p><b>Ejemplo:</b></p>
+            <p>Probar por inducción que la suma de los n primeros enteros positivos es igual a n(n+1)/2:<br>
+                1 + 2 + 3 + … + n =n(n+1)/2<br>
+                En este caso, P(n)=la suma de los n primeros enteros positivos es n(n+1)/2<br>
+                La propiedad es cierta para n=1: P(1)=1=1(2)/2=1<br>
+                Es conveniente ver que también es cierta para algunos valores más<br>
+                P(2)=1+2=3=2(3)/2; P(3)=1+2+3=6=3(4)/2.<br>
+                La dificultad del método de inducción está en probar el paso general, esto es, demostrar que si
+                suponemos que la propiedad es cierta para k, también lo es para k+1.<br>
+                Se supone que P(k)=k(k+1)/2 y queremos probar que la fórmula sigue siendo válida también para
+                k+1, es decir, que P(k+1)=(k+1)(k+2)/2. Vamos allá.<br>
+                P(k+1)=1 + 2 + … + k + (k+1)= P(k) + (k+1) = aplicamos la hipótesis de inducción
+                =k(k+1)/2 +(k+1)=(k+1)[k/2+1]=(k+1)(k+2)/2, como queríamos probar.</p>
+
+        </div>
       <!-- Site footer -->
       <footer class="footer">
         <p>&copy; 2016 Facultad de Ingeniería. UNAM.</p>

@@ -32,6 +32,145 @@ Notaciones.</h3>
           </ul>
         </nav>
       </div>
+        <div class="jumbotron">
+            <script language="JavaScript">
+                function corregir(){
+                    var p1
+                    var p2
+                    var p3
+                    var aciertos = 0
+                    var fallos = 0
+                    var blancos = 0
+                    var nota
+                    var notaFinal
+                        if (document.getElementById('p11').checked==true) {
+                            p1 = 1;
+                            aciertos++;
+                        }else if (document.getElementById('p12').checked==true){
+                            p1 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p13').checked==true){
+                            p1 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p14').checked==true){
+                            p1 = -0.5;
+                            fallos++;
+                        }else{
+                            p1= -0.1;
+                            blancos++;
+                        }
+
+                        if (document.getElementById('p21').checked==true) {
+                            p2 = 1;
+                            aciertos++;
+                        }else if (document.getElementById('p22').checked==true){
+                            p2 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p23').checked==true){
+                            p2 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p24').checked==true){
+                            p2 = -0.5;
+                            fallos++;
+                        }else{
+                            p2= -0.1;
+                            blancos++;
+                        }
+
+                        if (document.getElementById('p31').checked==true) {
+                            p3 = 1;
+                            aciertos++;
+                        }else if (document.getElementById('p32').checked==true){
+                            p3 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p33').checked==true){
+                            p3 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p34').checked==true){
+                            p3 = -0.5;
+                            fallos++;
+                        }else{
+                            p3= -0.1;
+                            blancos++;
+                        }
+
+                    nota = p1+p2+p3;
+                    if(nota<0){
+                        puntuacion = 0;
+                    }else{
+                        puntuacion = nota;
+                    }
+                    console.log("Aciertos: "+aciertos);
+                    console.log("fallos: "+fallos);
+                    console.log("blancos: "+blancos);
+                    console.log("puntuacion: "+puntuacion);
+                    document.getElementById('aciertos').value = aciertos;
+                    document.getElementById('fallos').value = fallos;
+                    document.getElementById('blancos').value = blancos;
+                    document.getElementById('puntuacion').value = puntuacion;
+                }
+            </script>
+
+            <form name="preguntas">
+                <h2>Cuestionario.</h2>
+                <p><b>¿Una relación y una correspondencia son ?</b></p>
+                    <p><input type="radio" name="pregunta1" id="p11" value="A"> Equivalentes.  </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p12" value="B"> Lo contrario.  </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p13" value="C"> Parecidas. </p>
+                <p>
+                    <input type="radio" name="pregunta1" id="p14" value="D">Se usan de forma indistinta.  </p>
+
+                <p><b>¿Como se define una función?</b></p>
+
+                <p>
+                    <input type="radio" name="pregunta2" id="p21" value="A"> Como una relación binaria, de forma que a cada elemento x del dominio le corresponde un único elemento del codominio  </p>
+                <p>
+                    <input type="radio" name="pregunta2" id="p22" value="B"> Como una correlación entre el dominio de la funcion y el codominio de la misma. </p>
+                <p>
+                    <input type="radio" name="pregunta2" id="p23" value="C"> Como una relación binaria, de forma que a cada elemento x del codominio le coresponte un unico elemento del dominio.  </p>
+                <p>
+                    <input type="radio" name="pregunta2" id="p24" value="D"> Como una relacion, de forma que a cada elemento x del dominio le corresponde uno o varios elementos del codominio.  </p>
+
+                <p><b>¿Cuál es la forma de prueba matemática en la que se trata de encontrar un caso en el que la proposición sea falsa?</b></p>
+
+                <p>
+                    <input type="radio" name="pregunta3" id="p31" value="A"> Reducción al absurdo  </p>
+                <p>
+                    <input type="radio" name="pregunta3" id="p32" value="B"> Inducción matemática  </p>
+                <p>
+                    <input type="radio" name="pregunta3" id="p33" value="C"> Contrarrecíproco  </p>
+                <p>
+                    <input type="radio" name="pregunta3" id="p34" value="D"> Doble implicación  </p>
+                <p> </p>
+            </form>
+            <form name="boton">
+                <input type="button" class="btn-primary"  name="boton" value=" CORREGIR " onclick="corregir()"/>
+            </form>
+            <br><br>
+            <b>RESULTADO DEL TEST</b>
+            <p>
+            <form role="resultado">
+                <div class="form-group">
+                    <label for="aciertos">Has acertado en </label>
+                    <input type="number" class="form-control" id="aciertos">
+                </div>
+                <div class="form-group">
+                    <label for="fallos">Has fallado en </label>
+                    <input type="number" class="form-control" id="fallos">
+                </div>
+                <div class="form-group">
+                    <label for="blancos">Has dejado de responder</label>
+                    <input type="number" class="form-control" id="blancos">
+                </div>
+                <div class="form-group">
+                    <label for="puntuacion">Tu puntuación es de: </label>
+                    <input type="number" class="form-control" id="puntuacion">
+                </div>
+            </form>
+
+        </div>
 
 
       <!-- Site footer -->
