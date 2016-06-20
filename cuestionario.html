@@ -23,7 +23,7 @@
 Notaciones.</h3>
         <nav>
           <ul class="nav nav-justified">
-            <li class="active"><a href="home.html">Inicio</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="intro.html">Introducción</a></li>
             <li><a href="desarrollo.html">Desarrollo</a></li>
               <li><a href="ejemplos.html">Pruebas Matemáticas</a></li>
@@ -38,6 +38,7 @@ Notaciones.</h3>
                     var p1
                     var p2
                     var p3
+                    var p4,p5
                     var aciertos = 0
                     var fallos = 0
                     var blancos = 0
@@ -61,11 +62,11 @@ Notaciones.</h3>
                         }
 
                         if (document.getElementById('p21').checked==true) {
-                            p2 = 1;
-                            aciertos++;
-                        }else if (document.getElementById('p22').checked==true){
                             p2 = -0.5;
                             fallos++;
+                        }else if (document.getElementById('p22').checked==true){
+                            p2 = 1;
+                            aciertos++;
                         }else if (document.getElementById('p23').checked==true){
                             p2 = -0.5;
                             fallos++;
@@ -78,14 +79,14 @@ Notaciones.</h3>
                         }
 
                         if (document.getElementById('p31').checked==true) {
-                            p3 = 1;
-                            aciertos++;
+                            p3 = -0.5;
+                            fallos++;
                         }else if (document.getElementById('p32').checked==true){
                             p3 = -0.5;
                             fallos++;
                         }else if (document.getElementById('p33').checked==true){
-                            p3 = -0.5;
-                            fallos++;
+                            p3 = 1;
+                            aciertos++;
                         }else if (document.getElementById('p34').checked==true){
                             p3 = -0.5;
                             fallos++;
@@ -93,8 +94,40 @@ Notaciones.</h3>
                             p3= -0.1;
                             blancos++;
                         }
+                        if (document.getElementById('p41').checked==true) {
+                            p4 = 0.5;
+                            fallos++;
+                        }else if (document.getElementById('p42').checked==true){
+                            p4 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p43').checked==true){
+                            p4 = 1;
+                            aciertos++;
+                        }else if (document.getElementById('p44').checked==true){
+                            p4 = -0.5;
+                            fallos++;
+                        }else{
+                            p4= -0.1;
+                            blancos++;
+                        }
+                        if (document.getElementById('p51').checked==true) {
+                            p5 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p52').checked==true){
+                            p5 = -0.5;
+                            fallos++;
+                        }else if (document.getElementById('p53').checked==true){
+                            p5 = 0.5;
+                            fallos++;
+                        }else if (document.getElementById('p54').checked==true){
+                            p5 = 1;
+                            aciertos++;
+                        }else{
+                            p5= -0.1;
+                            blancos++;
+                        }
 
-                    nota = p1+p2+p3;
+                    nota = p1+p2+p3+p4+p5+5;
                     if(nota<0){
                         puntuacion = 0;
                     }else{
@@ -125,9 +158,9 @@ Notaciones.</h3>
                 <p><b>¿Como se define una función?</b></p>
 
                 <p>
-                    <input type="radio" name="pregunta2" id="p21" value="A"> Como una relación binaria, de forma que a cada elemento x del dominio le corresponde un único elemento del codominio  </p>
+                    <input type="radio" name="pregunta2" id="p21" value="A">  Como una correlación entre el dominio de la funcion y el codominio de la misma. </p>
                 <p>
-                    <input type="radio" name="pregunta2" id="p22" value="B"> Como una correlación entre el dominio de la funcion y el codominio de la misma. </p>
+                    <input type="radio" name="pregunta2" id="p22" value="B">  Como una relación binaria, de forma que a cada elemento x del dominio le corresponde un único elemento del codominio </p>
                 <p>
                     <input type="radio" name="pregunta2" id="p23" value="C"> Como una relación binaria, de forma que a cada elemento x del codominio le coresponte un unico elemento del dominio.  </p>
                 <p>
@@ -136,32 +169,51 @@ Notaciones.</h3>
                 <p><b>¿Cuál es la forma de prueba matemática en la que se trata de encontrar un caso en el que la proposición sea falsa?</b></p>
 
                 <p>
-                    <input type="radio" name="pregunta3" id="p31" value="A"> Reducción al absurdo  </p>
+                    <input type="radio" name="pregunta3" id="p31" value="A">  Contrarrecíproco  </p>
                 <p>
                     <input type="radio" name="pregunta3" id="p32" value="B"> Inducción matemática  </p>
                 <p>
-                    <input type="radio" name="pregunta3" id="p33" value="C"> Contrarrecíproco  </p>
+                    <input type="radio" name="pregunta3" id="p33" value="C"> Reducción al absurdo </p>
                 <p>
-                    <input type="radio" name="pregunta3" id="p34" value="D"> Doble implicación  </p>
+                    <input type="radio" name="pregunta3" id="p34" value="D"> Doble implicación </p>
                 <p> </p>
+
+                <p><b>¿Cuál es la definición simple de un conjunto?</b></p>
+                <p><input type="radio" name="pregunta4" id="p41" value="A"> Una propiedad.  </p>
+                <p>
+                    <input type="radio" name="pregunta4" id="p42" value="B"> Una operación.  </p>
+                <p>
+                    <input type="radio" name="pregunta4" id="p43" value="C"> Una coleccion de cosas. </p>
+                <p>
+                    <input type="radio" name="pregunta4" id="p44" value="D"> Un gráfo.  </p>
+
+                <p><b>¿Cómo se define el método de doble implicación?</b></p>
+                <p><input type="radio" name="pregunta5" id="p51" value="A"> Encontrando una equivalencia.  </p>
+                <p>
+                    <input type="radio" name="pregunta5" id="p52" value="B"> Encontrando una tautología.  </p>
+                <p>
+                    <input type="radio" name="pregunta5" id="p53" value="C"> Encontrar un caso en el que no se cumpla
+                lo que queramos probar.</p>
+                <p>
+                    <input type="radio" name="pregunta5" id="p54" value="D">Si tenemos A y B, A implica a B y B implica a A.</p>
             </form>
             <form name="boton">
-                <input type="button" class="btn-primary"  name="boton" value=" CORREGIR " onclick="corregir()"/>
+                <input type="button" class="btn-primary"  name="boton" value=" Calificar" onclick="corregir()"/>
             </form>
             <br><br>
             <b>RESULTADO DEL TEST</b>
             <p>
             <form role="resultado">
                 <div class="form-group">
-                    <label for="aciertos">Has acertado en </label>
+                    <label for="aciertos"> Número de respuestas correctas. </label>
                     <input type="number" class="form-control" id="aciertos">
                 </div>
                 <div class="form-group">
-                    <label for="fallos">Has fallado en </label>
+                    <label for="fallos">Número de respuestas Incorrectas </label>
                     <input type="number" class="form-control" id="fallos">
                 </div>
                 <div class="form-group">
-                    <label for="blancos">Has dejado de responder</label>
+                    <label for="blancos">Número de preguntas que no respondiste</label>
                     <input type="number" class="form-control" id="blancos">
                 </div>
                 <div class="form-group">
