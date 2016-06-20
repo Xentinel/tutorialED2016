@@ -48,82 +48,82 @@ Notaciones.</h3>
                             p1 = 1;
                             aciertos++;
                         }else if (document.getElementById('p12').checked==true){
-                            p1 = -0.5;
+                            p1 = 0;
                             fallos++;
                         }else if (document.getElementById('p13').checked==true){
-                            p1 = -0.5;
+                            p1 = 0;
                             fallos++;
                         }else if (document.getElementById('p14').checked==true){
-                            p1 = -0.5;
+                            p1 = 0;
                             fallos++;
                         }else{
-                            p1= -0.1;
+                            p1= 0;
                             blancos++;
                         }
 
                         if (document.getElementById('p21').checked==true) {
-                            p2 = -0.5;
+                            p2 = 0;
                             fallos++;
                         }else if (document.getElementById('p22').checked==true){
                             p2 = 1;
                             aciertos++;
                         }else if (document.getElementById('p23').checked==true){
-                            p2 = -0.5;
+                            p2 = 0;
                             fallos++;
                         }else if (document.getElementById('p24').checked==true){
-                            p2 = -0.5;
+                            p2 = 0;
                             fallos++;
                         }else{
-                            p2= -0.1;
+                            p2= 0;
                             blancos++;
                         }
 
                         if (document.getElementById('p31').checked==true) {
-                            p3 = -0.5;
+                            p3 = 0;
                             fallos++;
                         }else if (document.getElementById('p32').checked==true){
-                            p3 = -0.5;
+                            p3 = 0;
                             fallos++;
                         }else if (document.getElementById('p33').checked==true){
                             p3 = 1;
                             aciertos++;
                         }else if (document.getElementById('p34').checked==true){
-                            p3 = -0.5;
+                            p3 = 0;
                             fallos++;
                         }else{
-                            p3= -0.1;
+                            p3= 0;
                             blancos++;
                         }
                         if (document.getElementById('p41').checked==true) {
-                            p4 = 0.5;
+                            p4 = 0;
                             fallos++;
                         }else if (document.getElementById('p42').checked==true){
-                            p4 = -0.5;
+                            p4 = 0;
                             fallos++;
                         }else if (document.getElementById('p43').checked==true){
                             p4 = 1;
                             aciertos++;
                         }else if (document.getElementById('p44').checked==true){
-                            p4 = -0.5;
+                            p4 = 0;
                             fallos++;
                         }else{
-                            p4= -0.1;
+                            p4= 0;
                             blancos++;
                         }
                         if (document.getElementById('p51').checked==true) {
-                            p5 = -0.5;
+                            p5 = 0;
                             fallos++;
                         }else if (document.getElementById('p52').checked==true){
-                            p5 = -0.5;
+                            p5 = 0;
                             fallos++;
                         }else if (document.getElementById('p53').checked==true){
-                            p5 = 0.5;
+                            p5 = 0;
                             fallos++;
                         }else if (document.getElementById('p54').checked==true){
                             p5 = 1;
                             aciertos++;
                         }else{
-                            p5= -0.1;
+                            p5= 0;
                             blancos++;
                         }
 
@@ -133,9 +133,9 @@ Notaciones.</h3>
                     }else{
                         puntuacion = nota;
                     }
-                    console.log("Aciertos: "+aciertos);
-                    console.log("fallos: "+fallos);
-                    console.log("blancos: "+blancos);
+                    console.log("Aciertos: "+ aciertos);
+                    console.log("fallos: "+ fallos);
+                    console.log("blancos: "+ blancos);
                     console.log("puntuacion: "+puntuacion);
                     document.getElementById('aciertos').value = aciertos;
                     document.getElementById('fallos').value = fallos;
